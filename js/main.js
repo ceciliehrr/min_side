@@ -1,6 +1,7 @@
 var carousel = document.querySelector('.carousel');
 var cellCount = 6;
 var selectedIndex = 0;
+$.mobile.loading().hide();
 
 function rotateCarousel() {
     var angle = selectedIndex / cellCount * -360;
