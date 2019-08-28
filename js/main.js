@@ -19,14 +19,4 @@ nextButton.addEventListener('click', function() {
     rotateCarousel();
 });
 
-$(document).on("pagecreate", carousel, function() {
-    $(carousel).on("swiperight", function() {
-        selectedIndex++;
-        rotateCarousel();
-    });
-});
-
-$(carousel).on("swipeleft", function() {
-    selectedIndex--;
-    rotateCarousel();
-});
+$('.carousel').draggable();
