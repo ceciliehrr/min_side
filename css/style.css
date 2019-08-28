@@ -63,7 +63,7 @@ h1 {
     /* For IE8 and earlier */
 }
 
-.carousel__cell:focus {
+.carousel__cell a:focus {
     position: absolute;
     outline-color: #ff6d70;
     outline-style: solid;
@@ -196,6 +196,20 @@ svg {
 
 .right {
     left: 58%;
+}
+
+.left:focus {
+    position: absolute;
+    outline-color: #ff6d70;
+    outline-style: solid;
+    outline-width: medium;
+}
+
+.right:focus {
+    position: absolute;
+    outline-color: #ff6d70;
+    outline-style: solid;
+    outline-width: medium;
 }
 
 .left:hover polyline,
