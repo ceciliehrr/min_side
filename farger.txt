@@ -1,0 +1,4 @@
+svart #1A1A1D
+grå #4E4E50
+
+metallik gold : #D4AF37

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <title>Bachelorprosjekt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="gantt/css/stylegantt.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+
+
+    <div class="grid-container" id="grid">
+        <div class="navbar">
+            <span style="font-size:40px;cursor:pointer" onclick="openNav()"><i class="fas fa-align-center"></i></span>
+            <div id="myNav" class="over">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="over-content">
+                    <a href="#filer">Filer</a>
+                    <a href="#omOppg">Prosjektet</a>
+                    <a href="#blogg">Blogg</a>
+                    <a href="#omMeg">Om meg</a>
+                    <a href="#atkins">Oppdragsgiver</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-small">
+            <span style="font-size:40px;cursor:pointer" onclick="openNavSmall()"><i
+                    class="fas fa-align-center"></i></span>
+            <div id="myNavSmall" class="over">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavSmall()">&times;</a>
+                <div class="over-content">
+                    <a href="#filer">Filer</a>
+                    <a href="#omOppg">Prosjektet</a>
+                    <a href="#blogg">Blogg</a>
+                    <a href="#omMeg">Om meg</a>
+                    <a href="#atkins">Oppdragsgiver</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <img src="pictures/lofoten10_stor.jpg" alt="Lofoten_digitalinnbygger" class="responsive_img" width="750" height="350">
+            <article class="animatable fadeInUp">
+                <div class="small-font">Bachelorprosjekt</div>
+                <div class="big-font">Hvordan tilpasse et brukergrensesnitt for en digital innbygger?</div>
+                <div class="medium-font">av Cecilie Hansen Rørås</div>
+            </article>
+        </div>
+
+        <div class="resultater">
+            <figure class="tekst" style="margin-bottom: 10px;">
+                <div class="strek">RESULTATER</div>
+            </figure>
+            <div class="row">
+                <div class="column-2">
+                    <p style="width: 80%; margin-top:0px;" class="small-font2">
+                        <h4>Resultatene inneholder:</h4>
+                        <ul>
+                            <li>De digitale innbyggerne og deres behov, presentert som Persona-kort</li>
+                            <li>"Min side", landingssiden til en innlogget innbygger som heter Bjørn Bar</li>
+                            <li>Et skjema for å søke om skjenkebevilling</li>
+                            <li>Prosjektrapporten</li>
+                        </ul><br>
+                        <h4> Denne siden, og resultatsidene er ikke kompatibel med Internet Explorer</h4>
+                    </p>
+                </div>
+            </div>
+            <div class="elem elem8 ">
+                <a class="pdf-mobil" href="resultater/digital_innbygger/index.html" target="_blank"><i
+                        class="far fa-calendar-check"></i>
+                </a>
+                <i class="fas fa-users fa-mobil icons"></i>
+                <div class="elem-p"><br>Digitale Innbyggere<br></div>
+                <div class="overlay">
+                    <a class="pdf" href="resultater/digital_innbygger/index.html" target="_blank">
+                        <div class="text"><i class="far fa-eye" style="font-size: 50px;"></i><br>SE</div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem9 ">
+                <a class="pdf-mobil" href="resultater/landingsside/index.html" target="_blank"><i
+                        class="far fa-calendar-check"></i>
+                </a>
+                <i class="far fa-address-card fa-mobil icons"></i>
+                <div class="elem-p"><br>Landingsside<br></div>
+
+                <div class="overlay">
+                    <a class="pdf" href="resultater/landingsside/index.html#" target="_blank">
+                        <div class="text"><i class="far fa-eye" style="font-size: 50px;"></i><br>SE</div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem10 ">
+                <a class="pdf-mobil" href="resultater/skjema/index.html#main" target="_blank"><i
+                        class="far fa-calendar-check"></i>
+                </a>
+                <i class="fas fa-align-left fa-mobil icons"></i>
+                <div class="elem-p"><br>Skjema<br></div>
+
+                <div class="overlay">
+                    <div class="text">
+                        <a class="pdf" href="resultater/skjema/index.html#main" target="_blank">
+                            <div class="text"><i class="far fa-eye" style="font-size: 50px;"></i><br>SE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="elem elem11 ">
+                <a class="pdf-mobil" href="docs/CHR_182198_Bachelorrapport.pdf" target="_blank"><i class="far fa-calendar-check"></i>
+                </a>
+                <i class="fas fa-book-reader fa-mobil icons"> </i>
+                <div class="elem-p"><br>Bachelor-<br>rapport<br></div>
+
+                <div class="overlay">
+                    <div class="text">
+                        <a class="pdf" href="docs/CHR_182198_Bachelorrapport.pdf" target="_blank">
+                            <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i><br>Last ned</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="assignment" id="filer">
+            <figure class="tekst">
+                <div class="strek">FILER</div>
+            </figure>
+            <div class="elem elem1">
+                <a class="pdf-mobil" href="docs/Prosjektskisse_CecilieHR_182198.pdf" target="_blank"><i
+                        class="far fa-calendar-check"></i>
+                </a>
+                <i class="far fa-calendar-check fa-mobil"></i>
+                <p class="elem-p">Prosjektskisse</p>
+
+                <div class="overlay">
+                    <a class="pdf" href="docs/Prosjektskisse_CecilieHR_182198.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem3">
+                <i class="far fa-calendar-check"> </i>
+                <div class="elem-p"><br>Gantt-skjema<br></div>
+
+                <div class="overlay">
+                    <div class="text"><i class="far fa-eye" style="font-size: 50px;"></i><br>SE</div>
+                </div>
+            </div>
+            <div class="elem elem2">
+                <a class="pdf-mobil" href="docs/Prosjektbeskrivelse_CecilieHR_182198.pdf" target="_blank"><i
+                        class="far fa-calendar-check">
+                    </i></a>
+                <i class="far fa-calendar-check fa-mobil"> </i>
+                <p class="elem-p">Prosjekt-<br>beskrivelse</p>
+
+                <div class="overlay">
+                    <a class="pdf" href="docs/Prosjektbeskrivelse_CecilieHR_182198.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem4">
+                <a class="pdf-mobil" href="docs/Statusrapport1_CHR_182198.pdf" target="_blank"><i
+                        class="far fa-calendar-check">
+                    </i></a>
+                <i class="far fa-calendar-check fa-mobil"> </i>
+                <p class="elem-p">Status-<br>rapport 1</p>
+
+                <div class="overlay">
+                    <a class="pdf" href="docs/Statusrapport1_CHR_182198.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem5">
+                <a class="pdf-mobil" href="docs/Statusrapport2_CHR_182198.pdf" target="_blank"><i
+                        class="far fa-calendar-check">
+                    </i></a>
+                <i class="far fa-calendar-check fa-mobil"> </i>
+                <p class="elem-p">Status-<br>rapport 2</p>
+
+                <div class="overlay">
+                    <a class="pdf" href="docs/Statusrapport2_CHR_182198.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem6">
+                <a class="pdf-mobil" href="docs/Statusrapport3_CHR.pdf" target="_blank"><i
+                        class="far fa-calendar-check">
+                    </i></a>
+                <i class="far fa-calendar-check fa-mobil"></i>
+                <div class="elem-p"><br>Status-<br>rapport 3</div>
+
+                <div class="overlay">
+                    <a class="pdf" href="docs/Statusrapport3_CHR.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elem elem7">
+                <a class="pdf-mobil" href="docs/CHR_182198_Bachelorrapport.pdf" target="_blank"><i
+                    class="far fa-calendar-check">
+                </i></a>
+                <i class="far fa-calendar-check fa-mobil"></i>
+                <div class="elem-p"><br>Bachelor-<br>rapport</div>
+                <div class="overlay">
+                    <a class="pdf" href="docs/CHR_182198_Bachelorrapport.pdf" target="_blank">
+                        <div class="text"><i class="far fa-arrow-alt-circle-down" style="font-size: 50px;"></i>Last ned
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="gant">
+            <div class="wrapper">
+                <div class="hide"><i class="fas fa-times"></i></div>
+                <div class="gantt">
+
+                    <div class="gantt__row gantt__row--months">
+                        <div class="gantt__row-first"></div>
+                        <span>Jan</span><span>Feb</span><span>Mar</span>
+                        <span>Apr</span><span>May</span><span>Jun</span>
+                        <span>Jul</span><span>Aug</span><span>Sep</span>
+                        <span>Oct</span><span>Nov</span><span>Dec</span>
+                    </div>
+                    <div class="gantt__row gantt__row--lines" data-month="5">
+                        <span></span><span></span><span></span>
+                        <span></span><span class="marker"></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            FASE 1
+                        </div>
+                        <ul class="gantt__row-bars">
+                            <li style="grid-column: 1/3; background-color: #2ecaac;">Frist 15.02</li>
+                            <li style="grid-column: 1/6; background-color: #ff6252;" class="stripes">PROSJEKTRAPPORT
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            FASE 2
+                        </div>
+                        <ul class="gantt__row-bars">
+                            <li style="grid-column: 3/5; background-color: #2ecaac;">Frist 30.04</li>
+                            <li style="grid-column: 1/6; background-color: #ff6252;" class="stripes">PROSJEKTRAPPORT
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            FASE 3
+                        </div>
+                        <ul class="gantt__row-bars">
+                            <li style="grid-column: 5/6; background-color: #2ecaac;">Frist 07.05</li>
+                            <li style="grid-column: 1/6; background-color: #ff6252;" class="stripes">PROSJEKTRAPPORT
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gantt__row gantt_row_empty">
+                        <div class="gantt__row-first">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="om_oppg" id="omOppg">
+            <figure class="tekst">
+                <div class="strek">PROSJEKTET</div>
+            </figure>
+            <div class="row">
+                <div class="column-1">
+                    <img class="animatable fadeInUp people" src="pictures/people2.jpg" alt="App">
+                </div>
+                <div class="column-2">
+                    <p style="width: 80%;" class="small-font2">
+                        Dette bachelorprosjektet blir skrevet som en avslutning på bachelorstudiet Informatikk ved Universitetet i Sørøst-Norge(USN). Problemstillingen er basert på et oppdrag fra SNC-Lavalin Atkins Norge, avdeling Digital Solutions. Digital Inhabitant - Digital
+                        Innbygger er et FoU-prosjekt som Atkins skal levere til Lillehammer kommune. Målet med FoU-prosjektet er å:
+                        <br></p>
+                    <ul style="width: 80%;" class="small-font2">
+                        <li>fornye, forenkle og forbedre arbeidsprosesser og tjenester på tvers av systemer og fagområder i kommunene.</li>
+                        <li>gi brukeren en helhetlig opplevelse av de digitale tjenestene som benyttes i kommunen.
+                        </li>
+                    </ul>
+                    <p style="width: 80%;" class="small-font2">
+                        Leveransen skal være en digital kommuneplattform som er basert på behov i kommunen. Mitt oppdrag innenfor FoU-prosjektet er å utforske hvordan man kan tilpasse brukergrensesnittet etter hvem innbyggeren er. Brukergrensesnittet i Digital Innbygger skal
+                        formidle informasjon til innbyggere med ulike tekniske behov og forutsetninger. Dette krever en forståelse for interaksjonsdesign, universell utforming og andre designprinsipper. Men kan tilpasset brukergrensesnitt løses på en
+                        innovativ måte med ny teknologi som AI og maskinlæring?</p>
+                </div>
+            </div>
+        </div>
+        <!--BLOGG-->
+        <div class="blog" id="blogg">
+            <figure class="tekst">
+                <div class="strek" id="blogg-strek">BLOGG</div>
+            </figure>
+            <div class="row">
+                <div class="column-1">
+                    <img src="pictures/lofoten10.jpg" alt="bloggbilde" class="animatable fadeInUp" id="bloggbilde" width="335" height="471">
+                </div>
+                <div class="column-2">
+                    <h1 class="xl-font" id="bloggpost"><b>BLOGGPOST 3</b></h1>
+                    <p class="small-font" id="bloggdato">07.02.2019</p>
+                    <div id="less" class="small-font2">Prosjekbeskrivelsen er i dag levert.</div><span id="dots" class="small-font2">...</span>
+                    <span class="small-font2" id="more">Da føler jeg bachelorprosjektet kan komme ordentlig i gang
+                        og neste skritt er å tilegne meg mest mulig teori. Hittil har jeg sett noen foredrag på
+                        Lynda.com om Accessibility. Bøkene jeg leser på for tiden er The design of everyday things
+                        av Don Norman, og Introduksjon til interaksjonsdesign av Tone Nordbø.</span><br><br>
+                    <button onclick="readMore()" id="myBtn" class="button">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="siste">
+            <div class="small-font">Tidligere innlegg:</div>
+            <div class="bloggelem blogg3">
+                <div class="text nummer">07.02</div>
+                <div class="overlay_blogg" onclick="newBlog('BLOGGPOST 3','07.02.2019','Prosjekbeskrivelsen er i dag levert...','Da føler jeg bachelorprosjektet kan komme ordentlig i gang og neste skritt er å tilegne meg mest mulig teori. Hittil har jeg sett noen foredrag på Lynda.com om Accessibility. Bøkene jeg leser på for tiden er The design of everyday things av Don Norman, og Introduksjon til interaksjonsdesign av Tone Nordbø.','pictures/lofoten10.jpg')">
+                </div>
+            </div>
+            <div class="bloggelem blogg2">
+                <div class="text nummer">18.01</div>
+                <div class="overlay_blogg" onclick="newBlog('BLOGGPOST 2','18.01.2019','I dag har jeg fått prosjektweb(denne nettsiden) på lufta...','Prosjektweb er ment for å dele innleveringer og fremgang med interesserte og er en del av kravene i bachelorprosjektet. Jeg har valgt å bruke GitHub som hostingtjeneste fordi jeg trenger mer praktisk erfaring med bruk av GIT som versjonskontrollverktøy.','pictures/lofoten10.jpg')">
+                </div>
+            </div>
+            <div class="bloggelem blogg1">
+                <div class="text nummer">07.01</div>
+                <div class="overlay_blogg" onclick="newBlog('BLOGGPOST 1','07.01.2019','Første arbeidsdag hos Atkins Norge på Lysaker der jeg fikk nærmere beskrivelser av mitt oppdrag innenfor Digital Innbygger...','Jeg hilste også på SCRUM-teamet som utvikler kommuneplattformen, de var selvfølgelig svært oppslukt i koding, jeg mistenker GIT-problemer! ;)','pictures/lofoten10.jpg')">
+                </div>
+            </div>
+            <div class="bloggelem blogg4">
+                <div class="text nummer"></div>
+                <div class="overlay_blogg"></div>
+            </div>
+        </div>
+        <!--BLOGG SLUTT-->
+
+        <div class="left" id="omMeg">
+            <figure class="tekst">
+                <div class="strek">OM MEG</div>
+            </figure>
+            <div class="row_portrett">
+                <div class="column_portrett animatable fadeInUp">
+                    <img src="pictures/meg.jpg" class="portrett" alt="Snow" style="width:100%">
+                </div>
+                <div class="column_portrett animatable fadeInUp">
+                    <img src="pictures/megball.jpg" class="portrett" alt="Forest" style="margin-top:15%;width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <p id="om" class="small-font2">Jeg heter Cecilie Hansen Rørås og studerer fulltid Informatikk på USN Bø, er deltidsutvikler hos SNC-Lavalin Atkins Norge, er deltids hundeeier og heltids samboer. Det jeg brenner aller mest for faglig sett er front-endutvikling. Brukergrensesnitt
+                som ikke er intuitive er en uting. På fritiden spiller jeg håndball og basket med studentidrettlaget Trimius.</p>
+        </div>
+
+        <div class="company" id="atkins">
+            <figure class="tekst">
+                <div class="strek">Oppdragsgiver</div>
+            </figure>
+            <div class="row">
+                <div class="column-1">
+                    <img src="pictures/ATKINS_MASTER_BLUE_RGB_HORIZ.png" class="animatable fadeInUp people" alt="App">
+                </div>
+                <div class="column-2">
+                    <p style="width: 80%;" class="small-font2">
+                        SNC-Lavalin Atkins Norge er et ingeniør- og konsulentselskap delt opp i fire forretningsområder: Project Management Consultancy, Rail Consultancy, Engineering og Digital Solutions. Dette bachelorprosjektet er basert på et oppdrag fra Digital Solutions.
+                        Digital Solutions leverer digitale løsninger innen transport, industri, helse, bygg og anlegg, og til offentlig sektor.
+                        <br> Besøk gjerne deres nettside: <a href="http://atkinsglobal.no/" target="_blank">HER</a>
+                        <div class="cont" style="text-align: center;">
+                            <ul class="contact">
+                                <li style="text-align: center;">
+                                    <p><i class="fa fa-map-marker fa-3x"></i></p>
+                                    <p><strong>Atkins Norge AS</strong><br> Lilleakerveien 6D<br> Postboks 438<br> 1327 Lysaker</p>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="kontakt">
+            <div class="cont">
+                <div class="small-font2">Skulle du lure på noe angående bachelorprosjektet, ikke nøl med å ta kontakt!
+                </div>
+                <ul class="contact">
+
+                    <li style="text-align: left;">
+                        <p><i class="fas fa-mobile-alt fa-3x"></i></p>
+                        <p><strong>TELEFON</strong><br> 40019988
+                        </p>
+                    </li>
+                    <li style="text-align: left;">
+                        <p><i class="far fa-envelope fa-3x"></i></p>
+                        <p><strong>E-POST</strong><br> ceciliehrr@gmail.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

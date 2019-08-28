@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+<title>Digital Innbygger - Min Side</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDau44QEpOmjbQjSxW2L6ge-3J9vIzTQ1U&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--Dette er et skjema for søknad om skjenkebevilling, skjemaet er i all hovedsak en blanding av kode fra w3schools.com-->
+    <div class="grid-container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#main" title="Gå direkte til skjema" class="skip">Gå direkte til skjema</a></li>
+                <li><a href="index.html" title="Go home"><i class="icons icons-sm fas fa-home"
+                            style="color:white;"></i></a></li>
+                <li><a href="#">Innstillinger</a></li>
+                <li><a href="#">Varsler</a></li>
+            </ul>
+        </nav>
+        <!--NAVIGATON END-->
+        <aside class="aside cards">
+            <figure><img id="userImg" src="pictures/user.png" alt="brukerikon">
+                <h1><b>Hei <span id="fornavnTittel"></span></b> </h1>
+            </figure>
+            <h1>Velkommen til din side i Lillehammer Kommune</h1>
+            <br>
+            <ul id="Kontaktopplysninger">
+                <li><i class="icons icons-sm far fa-user"></i><span id="navn"></span></li>
+                <li><i class="icons icons-sm fas fa-map-pin"></i><span id="adresse"></span></li>
+                <li><i class="icons icons-sm fas fa-globe-europe"></i><span id="poststed"></span></li>
+                <li><i class="icons icons-sm fas fa-phone"></i><span id="telefon"></span></li>
+                <li><i class="icons icons-sm fas fa-at"></i><span id="mail"></span></li>
+                <li><i class="icons icons-sm fas fa-suitcase"></i><span id="arbeid"></span></li>
+                <li>
+                    <div class="help-tip">
+                        <p>Er denne informasjonen feil? Gå til dine personopplysninger</p>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <hr>
+            <ul id="asideLenker">
+                <li><a href="#" title="Gå til dine varsler">Varsler</a></li>
+                <li><a href="#" title="Gå til dine opplysninger vi har lagret om deg">Dine personopplysninger</a></li>
+                <li><a href="#" title="Gå til alle dine meldinger">Alle meldinger</a></li>
+                <li><a href="#" title="Gå til oversikt over alle avtaler">Alle avtaler</a></li>
+            </ul>
+            <hr>
+            <div class="kontakt">
+                <h3>KONTAKTPERSON</h3>
+                <i class="icons far fa-id-badge"></i>
+                <br>
+                <a href="#" title="Gå til mer informasjon om kontaktperson">
+                    <p id="kontaktperson" style="text-decoration: underline;"></p>
+                </a>
+            </div>
+        </aside>
+        <!--ASIDE END-->
+        <section class="skjema cards">
+            <h2 id="main" tabindex="-1"><i class="far fa-file-alt icons"></i>SKJEMA - SKJENKEBEVILLING</h2>
+            <div class="container">
+                <form action="modal.html" id="regForm">
+                    <div class=tab>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Velg type bevilling</label>
+                            </div>
+                            <div class="col-75">
+                                <fieldset>
+                                    <input type="radio" class="option-input radio" name="bev" checked
+                                        onclick="ClearFields($(this));"><label id="nyBevilling">Ny
+                                        bevilling</label>
+                                    <input type="radio" class="option-input radio" name="bev" id="endreBevilling"><label
+                                        for="endreBevilling">Endre bevilling</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Første side ferdig-->
+                    <div class=tab>
+                        <div class="row">
+                            <h1>Bevillingssøker</h1>
+                            <div class="col-25">
+                                <label for="orgnr">Organisasjonsnummer</label>
+                            </div>
+                            <div class="invMessage" id="vis">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="far fa-building formicon"></i>
+                                <input type="text" id="orgnr" name="orgnr" oninput="this.className = ''"
+                                    placeholder="Organisasjonsnummer">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="orgnr">Organisasjonsnavn</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-suitcase formicon"></i>
+                                <input type="text" id="orgnavn" name="orgnavn" oninput="this.className = ''"
+                                    placeholder="Organisasjonsnavn">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="adr">Adresse</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-map-pin formicon"></i>
+                                <input type="text" id="adr" name="adr" oninput="this.className = ''"
+                                    placeholder="Adresse">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="pnr">Postnummer</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-globe-europe formicon"></i>
+                                <input type="text" id="pnr" name="pnr" oninput="this.className = ''"
+                                    placeholder="Postnummer">
+                                <input type="text" id="psted" name="psted" oninput="this.className = ''"
+                                    placeholder="Poststed">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="tlf">Telefonnummer</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-mobile-alt formicon"></i>
+                                <input type="text" id="tlf" name="tlf" oninput="this.className = ''"
+                                    placeholder="Telefonnummer">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="epost">Epost</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-at formicon"></i>
+                                <input type="text" id="epost" name="epost" oninput="this.className = ''"
+                                    placeholder="Epost">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Andre side ferdig-->
+                    <div class=tab>
+                        <div class="row">
+                            <h1>Skjenkested</h1>
+                            <div class="col-25">
+                                <label>Har skjenkested og bevillingssøker samme navn og adresse?</label>
+                            </div>
+                            <div class="col-75">
+                                <fieldset>
+                                    <input type="radio" class="option-input radio " name="info" checked
+                                        onclick="disable($(this));"><label id="ja">Ja</label>
+                                    <input type="radio" class="option-input radio" name="info"
+                                        onclick="enable($(this));"><label id="nei">Nei</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Navn</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-user formicon"></i>
+                                <input type="text" id="fornavnP" name="fornavnP" class="input2" oninput="this.className = ''"
+                                placeholder="Fornavn" disabled>
+                                <input type="text" id="etternavnP" name="etternavnP" class="input2" oninput="this.className = ''"
+                                placeholder="Fornavn" disabled >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="adrP">Adresse</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-map-pin formicon"></i>
+                                <input type="text" id="adrP" name="adrP" oninput="this.className = ''"
+                                    placeholder="Adresse" class="input2" disabled>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="pnr">Postnummer</label>
+                            </div>
+                            <div class="invMessage">Dette feltet er obligatorisk</div>
+                            <div class="col-75">
+                                <i class="fas fa-globe-europe formicon"></i>
+                                <input type="text" id="pnrP" name="pnrP" oninput="this.className = ''"
+                                    placeholder="Postnummer" class="input2" disabled>
+                                <input type="text" id="pstedP" name="pstedP" oninput="this.className = ''"
+                                    placeholder="Poststed" class="input2" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="overflow:auto;">
+                        <div style="float:right;">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Tilbake</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Neste</button>
+                        </div>
+                    </div>
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>BACHELORPROSJEKT RESULTATER av Cecilie Hansen Rørås</p>
+            <p><a href="https://ceciliehrr.github.io/prosjektweb/index.html" target="_blank"
+                    style="text-decoration: underline; color: white;">Gå tilbake til prosjektwebben <i
+                        class="icons icons-sm fas fa-external-link-alt" style="color:white;"></i></a></p>
+        </footer>
+        <!--FOOTER END-->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Digital Innbygger - Min Side</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="grid-container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" title="Go home"><i class="icons icons-sm fas fa-home" style="color:white;" ></i></a></li>
+                <li><a href="#">Innstillinger</a></li>
+                <li><a href="#">Varsler</a></li>
+            </ul>
+        </nav><!--NAVIGATON END-->
+        <aside  class="aside cards">
+            <figure><img id="userImg" src="pictures/user.png" alt="brukerikon"><h1><b>Hei <span id="fornavnTittel"></span></b> </h1></figure>
+            <h1>Velkommen til din side i Lillehammer Kommune</h1>
+            <br>
+            <ul id="Kontaktopplysninger">
+                <li><i class="icons icons-sm far fa-user"></i><span id="navn"></span></li>
+                <li><i class="icons icons-sm fas fa-map-pin"></i><span id="adresse"></span></li>
+                <li><i class="icons icons-sm fas fa-globe-europe"></i><span id="poststed"></span></li>
+                <li><i class="icons icons-sm fas fa-phone"></i><span id="telefon"></span></li>
+                <li><i class="icons icons-sm fas fa-at"></i><span id="mail"></span></li>
+                <li><i class="icons icons-sm fas fa-suitcase"></i><span id="arbeid"></span></li>
+                <li><div class="help-tip">
+                        <p>Er denne informasjonen feil? Gå til dine personopplysninger</p>
+                    </div></li>
+            </ul>
+            <br>
+            <hr>
+            <ul id="asideLenker">
+                <li><a href="#" title="Gå til dine varsler">Varsler</a></li>
+                <li><a href="#" title="Gå til dine opplysninger vi har lagret om deg">Dine personopplysninger</a></li>
+                <li><a href="#" title="Gå til alle dine meldinger">Alle meldinger</a></li>
+                <li><a href="#" title="Gå til oversikt over alle avtaler">Alle avtaler</a></li>
+            </ul>
+            <hr>
+            <div class="kontakt">
+                        <h3>KONTAKTPERSON</h3>
+                        <i class="icons far fa-id-badge"></i>
+                        <br>
+                        <a href="#" title="Gå til mer informasjon om kontaktperson">
+                        <p id="kontaktperson" style="text-decoration: underline;"></p>
+                    </a>
+                </div>
+        </aside><!--ASIDE END-->
+        <section class="messages cards">
+                <h2><i class="icons far fa-envelope"></i>Siste meldinger</h2>
+                <article>
+                    <a href="#" title="Gå til denne meldingen">
+                    <h3><img class="sektorIkon" src="pictures/helse.png" alt="kategori helse og velferd">Vedtak om helse</h3>
+                    <h4><i class="icons icons-sm far fa-calendar-alt"></i>4.Mars 2019<span class="label ny">NY!</span></h4>
+                    <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    <p style="text-decoration: underline;">Trykk for å lese mer</p>
+                        <hr>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="Gå til denne meldingen">
+                    <img class="sektorIkon" src="pictures/adm.png" alt="kategori administrasjon"><h3>Svar på søknad om innsyn</h3>
+                    <h4><i class="icons icons-sm far fa-calendar-alt"></i>5.Oktober 2018</h4>
+                    <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    <p style="text-decoration: underline;">Trykk for å lese mer</p>    
+                        <hr>
+                    </a>
+                </article>
+        </section> <!--MESSAGES END-->
+        <section class="avtaler cards">
+            <h2><i class="icons far fa-calendar"></i>Neste avtale</h2>
+            <article>
+                <a href="#" title="Gå til mer informasjon om denne avtalen">
+                <img class="sektorIkon" src="pictures/tekbyg.png" alt="kategori teknisk og bygg"><h3>Time med eiendom</h3>
+                <h4><i class="icons icons-sm far fa-calendar-alt"></i>4.Juli 2019 - Torsdag kl. 14.00</h4>
+                <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                <p style="text-decoration: underline;">Trykk for å lese mer</p>    
+                     <hr>
+                </a>
+            </article>
+            <article>
+                <a href="#" title="Gå til mer informasjon om denne avtalen">
+                <img class="sektorIkon" src="pictures/helse.png" alt="kategori helse og velferd"><h3>Time med helse</h3>
+                <h4><i class="icons icons-sm far fa-calendar-alt"></i>12.August 2019 - Mandag kl. 10.00</h4>
+                <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                <p style="text-decoration: underline;">Trykk for å lese mer</p>    
+                    <hr>
+                </a>
+            </article>
+        </section><!--AVTALER END-->
+        <section class="tjenester cards">
+                <h2> <i class="icons fas fa-cog"></i>Tjenester</h2>
+             <div class="row">
+                    <div class="column">
+                        <a href="#" title="Gå til alle søknader og skjema">
+                        <div class="cards">
+                            <h3>SØKNAD OG SKJEMA</h3>
+                            <i class="icons far fa-file-alt"></i>
+                            <hr>
+                            <p>Her finner du alle søknader og skjema i kommunen</p>
+                        </div>
+                        </a>
+                    </div>
+               
+                    <div class="column">
+                        <a href="#" title="Gå til denne">
+                        <div class="cards">
+                            <h3>HVA SKJER</h3>
+                            <i class="icons far fa-building"></i>
+                            <hr>
+                            <p>Hva skjer i nærheten av der du bor</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="column">
+                        <a href="#">
+                        <div class="cards">
+                            <h3>INNSYN</h3>
+                            <i class="icons fas fa-archive"></i>
+                            <hr>
+                            <p>Be om innsyn i saker som du har rettigheter til.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="#" title="Gå til mer informasjon">
+                        <div class="cards">
+                            <h3>HJELP</h3>
+                            <i class=" icons fas fa-question"></i>
+                            <hr>
+                            <p>Er du usikker på hva du trenger? La oss hjelpe deg</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+        </section><!--TJENESTER END-->
+        <footer class="footer">
+            <p>BACHELORPROSJEKT RESULTATER av Cecilie Hansen Rørås</p>
+            <p ><a href="https://ceciliehrr.github.io/prosjektweb/index.html" target="_blank" style="text-decoration: underline; color: white;">Gå tilbake til prosjektwebben <i class="icons icons-sm fas fa-external-link-alt" style="color:white;"></i></a></p>  
+        </footer><!--FOOTER END-->
+    </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

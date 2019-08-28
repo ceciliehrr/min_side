@@ -1,0 +1,125 @@
+@charset "utf-8";
+html{
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+   }
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    background-color: #F1F1F1;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  main{
+      margin-top:220px;
+  }
+  .topnav h1{
+   color: #EDEDED;
+  }
+  .topnav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: #333333;
+    height: auto;
+    text-align: center;
+    padding:25px;
+    margin-bottom: 20px;
+  }
+  .topnav a {
+    color: #ff6f61;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .topnav a:focus {
+    outline-color:#ff6d70  ;
+    outline-style:solid;  
+    outline-width: medium;
+  }
+  .topnav #amar:hover {
+    background-color: #5AC1C0;
+    color: white;
+    transition: 0.3s;
+  }
+  .topnav #evelyn:hover {
+    background-color: #AEBFAE;
+    color: white;
+    transition: 0.3s;
+  }
+  .topnav #nils:hover {
+    background-color: #197278;
+    color: white;
+    transition: 0.3s;
+  }
+  .topnav #lise:hover {
+    background-color: #690150;
+    color: white;
+    transition: 0.3s;
+  }
+  .topnav #bjorn:hover {
+    background-color: #C54637;
+    color: white;
+    transition: 0.3s;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card ul{
+    position:relative;
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+  }
+  .card ul li {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 16px;
+    margin: 20px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: grey;
+  }
+  .footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .footer a:focus{
+    outline-color:white ;
+    outline-style:solid;  
+    outline-width: medium;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    .topnav a{
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+  }

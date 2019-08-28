@@ -1,0 +1,853 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400i,700,300,300i,400');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+
+/* CSS Document */
+
+:root {
+    --primary-one:rgb(246, 246, 246);
+    --primary-two:#35494e ;  
+    --primary-three: #bcab8e;
+    --primary-four: #f1f1f1; 
+  }
+
+* {
+  box-sizing: border-box;
+}
+html,body{
+	min-width: 350px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 2%;
+  transition: background-color .5s;
+}
+iframe{
+  border: none;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: var(--primary-one);
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+}
+.navbar-small{
+  display: none;
+  grid-area: navbar-small;
+  background-color: var(--primary-one);
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+}
+.fa-align-center{
+ -webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
+  transition: font-size 1s;
+}
+.fa-align-center:hover{
+  font-size: 45px;
+}
+.over {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-two);
+  background-color: #35494e;
+  background-color: rgba(53, 73, 78, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.over-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.over a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--primary-three);
+  color: #bcab8e;
+  display: block;
+  transition: 0.3s;
+}
+
+.over a:hover, .over a:focus {
+  color: #f1f1f1;
+}
+
+.over .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--primary-one);
+  height: auto;
+}
+
+.header article{
+  margin-top:15%;
+  margin-left: 2%;
+}
+.responsive_img{
+  padding-top: 100px;
+  float: right;
+  width: 60%;
+  height: auto;
+}
+/*FONTS*/
+.xl-font{
+  color: var(--primary-two);
+  color: #35494e;
+  font-size: 48px;
+  font-weight: bold;
+}
+.big-font{
+   color: var(--primary-two);
+   color:#35494e;
+   font-size: 2.5em;
+   font-weight: bold;
+}
+.medium-font{
+   color: var(--primary-three);
+   color:  #bcab8e;
+   font-style: italic;
+   font-size: 2em;
+   font-weight: thin;
+   margin-top: 1%;
+}
+.small-font{
+    color: var(--primary-three);
+    color:  #bcab8e;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.small-font2{
+  font-size: 20px;
+}
+/*Font-slutt*/
+.om_oppg{
+  grid-area: om_oppg;
+  width: 100%;
+  background-color: var(--primary-one );
+}
+#oppgaven{
+  font-size: 20px;
+}
+.countdown{
+  grid-area: countdown;
+  width: 100%;
+  position: relative;
+  background-color: var(--primary-one );
+}
+.resultater{
+  background-color: var(--primary-one );
+}
+.assignment{
+  grid-area: assignment;
+  width: 100%;
+  position: relative;
+  background-color: var(--primary-one );
+}
+.text {
+  color:var(--primary-three);
+  color:  #bcab8e;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 0;
+}
+.text:hover{
+  opacity: 0.7;
+}
+.fa-calendar-check{
+  padding-top:20%;
+  font-size: 50px;
+}
+.fa-calendar-times{
+  padding-top:20%;
+  font-size: 50px;
+}
+.icons{
+  padding-top:20%;
+  font-size: 50px;
+}
+.fa-times{
+  font-size: 50px;
+}
+.tekst{
+  font-weight: 300;
+  font-style: italic;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin:0;
+	margin-top:50px;
+  margin-bottom:40px;
+  font-size: 30px;
+}
+.strek{
+	width: 250px;
+	height: auto;
+  border-bottom: solid 1px var(--primary-two);
+  border-bottom: #35494e;
+  margin-top: 20px;
+}
+#blogg-strek{
+  margin-left: -64px;
+}
+.elem{
+  display: block;
+  margin: 10px;
+  width:12%;
+  height: 0;
+  padding-bottom: 12%;/* this and width need to be similar*/
+  float: left;
+  position: relative;
+  display: block;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+.elem1,.elem3, .elem4,.elem2,.elem5, .elem6, .elem8, .elem9, .elem10, .elem11, .elem7{
+  background-color: var(--primary-two);
+  background-color: #35494e;
+  color: var(--primary-three);
+  color:  #bcab8e;
+}
+.elem-p{
+  font-size:15px;
+  font-family:'Roboto';
+  font-weight: 400;
+}
+#gant{
+  grid-area: gantt;
+  width: 100%;
+  height: auto;
+}
+.bloggelem{
+  width:30%;
+  height: 0;
+  margin: 10px;
+  margin-top: 10%;
+  padding-bottom: 30%;/* this and width need to be similar*/
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.bloggelem:hover{
+  opacity:0.7;
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: var(--primary-four);
+  background-color: #f1f1f1;
+}
+.blogg1, .blogg2, .blogg3{
+  background-color:#BABABA;
+  box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+ .blogg4, .blogg5, .blogg6{
+  background-color: var(--primary-four);
+  background-color: #f1f1f1;
+  box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+#bloggarkiv{
+  margin-left: 3%;
+  font-size: 20px;
+}
+.nummer{
+  font-size:30px;
+  color: var(--primary-two);
+  color: #35494e;
+  z-index: 0;
+}
+#more{
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  z-index: 0;
+  background-color:var(--primary-two);
+  background-color: #35494e;
+  
+}
+.overlay_blogg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  z-index: 0;
+  }
+.elem:hover .overlay {
+  opacity:1;
+  cursor: pointer;
+}
+.elem:hover .overlay_blogg {
+  opacity:1;
+  cursor: pointer;
+}
+.pdf-mobil{
+  display: none;
+  text-decoration: none;
+  color: var(--primary-three);
+  color:  #bcab8e;
+}
+.blog{
+  grid-area: blog;
+  padding: 64px;
+  background-color: var(--primary-one );
+}
+.row{
+  padding-top:20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.column-2 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+  margin-top: 3%;
+}
+.column-1 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+.button {
+  border:none;
+  background-color: var(--primary-two);
+  background-color: #35494e;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline:none;
+}
+.button:hover {
+  transition: 0.6s;
+  opacity: 0.4;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.siste{
+  padding-top: 35%;
+  width: 100%;
+	height: auto;
+  grid-area: siste;
+  background-color: var(--primary-one );
+}
+.siste,
+.left,
+.assignment,
+.countdown,
+.resultater,
+.right,
+.blog {
+padding-bottom: 50px;
+}
+
+.left {
+  grid-area: left;
+  background-color:var(--primary-four);
+  background-color: #f1f1f1;
+}
+.column_portrett {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin: 5%;
+}
+.row_portrett::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.right {
+  grid-area: right;
+  background-color: var(--primary-one);
+  text-align: center;
+}
+#om{
+  margin: 50% 20% 20% 20%;
+  font-size: 20px;
+}
+.company{
+  grid-area: company;
+  background-color: var(--primary-one);
+}
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 100px;
+}
+.cont {
+  text-align: center;
+}
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+.contact p {
+  text-align: center;
+}
+.contact li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1em;
+  text-align: center;
+}
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+.resultater{
+  grid-area: resultater;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'navbar navbar navbar navbar navbar navbar'
+    'header header header header header header'
+    'countdown countdown countdown countdown countdown countdown'
+    'resultater resultater resultater resultater resultater resultater'
+    'assignment assignment assignment assignment assignment assignment'
+    'gantt gantt gantt gantt gantt gantt'
+    'om_oppg om_oppg om_oppg om_oppg om_oppg om_oppg'
+    'blog blog blog blog siste siste'
+    'left left left left right right'
+    'company company company company company company'
+    'footer footer footer footer footer footer';
+   /*grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header{
+    height: auto;
+  }
+  .over-content a{
+    font-size: 35px;
+  }
+  .navbar-small{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .xl-font{
+    font-size:40px;
+  }
+  .big-font{
+    font-size:35px;
+  }
+  .medium-font{
+    font-size: 30px;
+  }
+  .small-font{
+    font-size:25px;
+  }
+  .responsive_img {
+    width: 50%;
+    height: auto;
+    padding-bottom:40px;
+  }
+  #oppgaven{
+    font-size: 15px;
+  }
+  .assignment{
+    padding: 0px;
+  }
+  .countdown{
+    padding: 0px;
+  }
+  .resultater{
+    padding: 0;
+  }
+  .overlay {
+    display: none;
+    }
+  .elem{
+    width:20%;
+    margin: 3px;
+    padding-bottom: 20%;/* this and width need to be similar*/
+  }
+    .elem3{
+    display: none;
+  }
+  #gant{
+    display: none;
+  }
+  .pdf{
+    display: none;
+  }
+  .pdf-mobil{
+    display: block;
+    text-decoration: none;
+  }
+  .elem .fa-mobil{
+    display: none;
+  }
+  .strek{
+    width: 250px;
+    height: auto;
+    border-bottom: solid 1px var(--primary-two);
+    border-bottom: #35494e;
+  }
+  .blog{
+    padding: 0px;
+  }
+  .column-2,
+  .column-1 {
+    width: 100%;
+    text-align: left;
+  }
+  img {
+    margin: auto;
+  }
+
+  #blogg-strek{
+    margin-left:0;
+  }
+  #om{
+    font-size: 15px;
+  }
+  .bloggelem{
+    width:30%;
+    padding-bottom: 30%;/* this and width need to be similar*/
+  }
+  #bloggbilde{
+    padding:0;
+    margin:0;
+  }
+  #nummer{
+    font-size:20px;
+  }
+  .siste{
+    padding-top:60%;
+    padding-left: 3%;
+  }
+  .text {
+    font-size: 20px;
+    padding:20px;
+  }
+  .row{
+    padding:50px;
+    
+  }
+
+}
+
+/*Mobile */
+@media only screen and (max-width: 600px) {
+  .grid-container  {
+    padding: 2px;
+    grid-template-areas: 
+    'navbar-small navbar-small navbar-small navbar-small navbar-small navbar-small'
+      'header header header header header header'
+      'countdown countdown countdown countdown countdown countdown'
+      'resultater resultater resultater resultater resultater resultater '
+      'assignment assignment assignment assignment assignment assignment'
+      'om_oppg om_oppg om_oppg om_oppg om_oppg om_oppg'
+      'blog blog blog blog blog blog'
+      'siste siste siste siste siste siste'
+      'left left left left left left' 
+      'right right right right right right'
+      'company company company company company company'
+      'footer footer footer footer footer footer';
+  }
+	body{
+    padding: 0px;
+    margin:4px;
+  }
+  
+  .header{
+    height: auto;
+  }
+  .header article{
+    margin-top:15%;
+    margin-left: 0;
+  }
+  .fa-align-center{
+    margin: 5px;
+    margin-top: 0;
+  }
+  .over-content a{
+    font-size: 30px;
+  }
+  .xl-font{
+    font-size:25px;
+    margin:0;
+  }
+  .big-font{
+    font-size:23px;
+  }
+  .medium-font{
+    font-size: 20px;
+  }
+  .small-font{
+    font-size: 17px;
+  }
+  .small-font2{
+    font-size: 17px;
+  }
+  .responsive_img {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  #oppgaven{
+    font-size: 15px;
+  }
+  .assignment{
+    padding: 0px;
+  }
+  .countdown{
+    padding: 0px;
+  }
+  .overlay {
+  display: none;
+  }
+  .elem{
+    width:20%;
+    margin: 3px;
+    margin-left: 2%;
+    padding-bottom: 20%;/* this and width need to be similar*/
+  }
+  .elem3{
+    display: none;
+  }
+
+  #gant{
+    display: none;
+  }
+  .pdf{
+    display: none;
+  }
+  .pdf-mobil{
+    display: block;
+    text-decoration: none;
+  }
+  .elem .fa-mobil{
+    display: none;
+  }
+  .fa-calendar-check{
+    font-size:18px;
+  }
+  .fa-calendar-times{
+    font-size: 18px;
+  }
+  .elem-p{
+    font-size:10px;
+    font-family:'Roboto';
+    font-weight: 400;
+  }
+  .elem-p .big{
+    visibility: hidden;
+  }
+  .text{
+    font-size: 15px;
+  }
+  .strek{
+    width: 250px;
+    height: auto;
+    border-bottom: solid 1px var(--primary-two);
+    border-bottom: #35494e;
+  }
+  .blog{
+    padding: 0px;
+  }
+  #bloggbilde{
+    padding:0;
+    margin:0;
+  }
+  .column-2,
+  .column-1 {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  .people{
+    width: 70%;
+    height: auto;
+    margin: 0;
+}
+  #blogg-strek{
+    margin-left:0;
+  }
+  .right{
+    text-align: left;
+  }
+  #om{
+    margin: 0% 0% 0% 0%;
+    font-size: 17px;
+    width: 80%;
+  }
+  .navbar-small{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .siste{
+    padding-top: 3%;
+    padding-left: 3%;
+  }
+  .bloggelem{
+    width:20%;
+    padding-bottom: 20%;/* this and width need to be similar*/
+    margin: 6px;
+  }
+  .nummer{
+    font-size:20px;
+  }
+  .portrett{
+    width: 50%;
+    height: auto;
+    margin: 0;
+  }
+  .column_portrett {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    margin: 5px;
+  }
+  .text {
+    padding:20px;
+  }
+}
