@@ -318,10 +318,22 @@ polyline {
     .right {
         left: 67%;
     }
+    .left:focus {
+        outline: none;
+    }
+    .right:focus {
+        outline: none;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .arrow {
         top: 60%;
+    }
+    .left:focus {
+        outline: none;
+    }
+    .right:focus {
+        outline: none;
     }
 }
