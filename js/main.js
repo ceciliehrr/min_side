@@ -19,7 +19,7 @@ nextButton.addEventListener('click', function() {
     rotateCarousel();
 });
 
-$('body').swipe({
+$('html').swipe({
     swipe: function(event, direction, distance, duration, fingerCount) {
         switch (direction) {
             case "left":
