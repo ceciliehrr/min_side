@@ -19,15 +19,13 @@ nextButton.addEventListener('click', function() {
     rotateCarousel();
 });
 
-$(document).on("pagecreate", ".right", function() {
-    $(carousel).on("swiperight", function() {
-        selectedIndex++;
-        rotateCarousel();
-    });
+$(carousel).on("swiperight", function() {
+    selectedIndex++;
+    rotateCarousel();
 });
-$(document).on("pagecreate", ".left", function() {
-    $(carousel).on("swipeleft", function() {
-        selectedIndex--;
-        rotateCarousel();
-    });
+
+
+$(carousel).on("swipeleft", function() {
+    selectedIndex--;
+    rotateCarousel();
 });
