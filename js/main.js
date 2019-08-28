@@ -7,18 +7,6 @@ function rotateCarousel() {
     carousel.style.transform = 'translateZ(-259px) rotateY(' + angle + 'deg)';
 }
 
-var prevButton = document.querySelector('.left');
-prevButton.addEventListener('click', function() {
-    selectedIndex--;
-    rotateCarousel();
-});
-
-var nextButton = document.querySelector('.right');
-nextButton.addEventListener('click', function() {
-    selectedIndex++;
-    rotateCarousel();
-});
-
 $('html').swipe({
     swipe: function(event, direction, distance, duration, fingerCount) {
         switch (direction) {
@@ -31,4 +19,16 @@ $('html').swipe({
                 rotateCarousel();
         }
     }
+});
+
+var prevButton = document.querySelector('.left');
+prevButton.addEventListener('click', function() {
+    selectedIndex--;
+    rotateCarousel();
+});
+
+var nextButton = document.querySelector('.right');
+nextButton.addEventListener('click', function() {
+    selectedIndex++;
+    rotateCarousel();
 });
