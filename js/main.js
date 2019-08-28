@@ -19,14 +19,16 @@ nextButton.addEventListener('click', function() {
     rotateCarousel();
 });
 
-$(carousel).on("swipeleft", function() {
-    selectedIndex--;
-    rotateCarousel();
-});
-
-$(document).on("pagecreate", carousel, function() {
-    $(carousel).on("swiperight", function() {
-        selectedIndex++;
-        rotateCarousel();
-    });
+$('.scene').swipe({
+    swipe: function(event, direction, distance, duration, fingerCount) {
+        switch (direction) {
+            case "left":
+                selectedIndex++;
+                rotateCarousel();
+                break;
+            case "right":
+                selectedIndex--;
+                rotateCarousel();
+        }
+    }
 });
