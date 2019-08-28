@@ -256,6 +256,9 @@ polyline {
         font-size: 20px;
         opacity: 1;
     }
+    .carousel__cell a:focus {
+        outline: none;
+    }
     .card_title {
         font-size: 12px;
         margin-top: -20px;
@@ -329,6 +332,9 @@ polyline {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .arrow {
         top: 60%;
+    }
+    .carousel__cell a:focus {
+        outline: none;
     }
     .left:focus {
         outline: none;
