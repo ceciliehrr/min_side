@@ -65,6 +65,8 @@ h1 {
 
 .carousel__cell a:focus {
     position: absolute;
+    left: 10px;
+    top: 10px;
     outline-color: #ff6d70;
     outline-style: solid;
     outline-width: medium;
