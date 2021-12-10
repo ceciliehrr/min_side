@@ -123,6 +123,7 @@ nav ul li a {
 .column img {
     vertical-align: middle;
     width: 100%;
+    height: auto;
 }
 
 .imgcontainer {
@@ -279,6 +280,14 @@ figure p {
         top: 15px;
         right: 35px;
     }
+    .recipe {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    figure {
+        width: 100%;
+    }
 }
 
 
@@ -299,6 +308,14 @@ figure p {
     nav a {
         float: left;
     }
+    .recipe {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    figure {
+        width: 100%;
+    }
 }
 
 
@@ -318,5 +335,16 @@ figure p {
     }
     nav a {
         float: left;
+    }
+    .recipe {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    figure {
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 50px;
     }
 }
